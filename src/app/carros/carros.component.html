@@ -1,0 +1,39 @@
+<hr>
+
+<a> Apresentação da lista de carros com o os valores vindo de variável</a>
+<ul>
+  <li>
+    Nome dos carros:
+  </li>
+  <li *ngFor="let carro1 of carros1">
+    {{ carro1}}
+  </li>
+  <li>
+    Valores do carros:
+  </li>
+  <li *ngFor="let valor1 of valores1">
+    {{ valor1 | currency : "BRL" }}
+  </li>
+</ul>
+
+<hr>
+
+<a> Apresentação da lista de carros com o os valores vindo de services</a>
+<ul>
+
+  <li>
+    Nome dos carros:
+  </li>
+  <li *ngFor="let carro2 of carros2">
+
+    {{ carro2 }}
+  </li>
+  <li>
+    Valores dos carros:
+  </li>
+  <li *ngFor="let valor2 of valores2">
+    {{ valor2 | currency : "BRL" }}
+  </li>
+</ul>
+
+<hr>
